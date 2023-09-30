@@ -48,14 +48,14 @@ const styles = StyleSheet.create({
   BtnShopOwner: {
     backgroundColor: "#324025",
     width: "250px",
-    height: 40,
+    height: 45,
     borderRadius: 30,
   },
 
   BtnDeliveryOwner: {
     backgroundColor: "#F6BC5E",
     width: "250px",
-    height: 40,
+    height: 45,
     borderRadius: 30,
     marginTop: 5
   },
