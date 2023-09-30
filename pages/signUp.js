@@ -19,7 +19,9 @@ function SignUp() {
    const options = ["Option 1", "Option 2", "Option 3"];
    const [selectedValue, setSelectedValue] = useState(options[0]);
   return (
-    <View>
+    <View  style={styles.container}>
+
+      <View style={styles.centeredContent}>
       <Image
         source={require("../assets/logo.png")}
         style={{ width: 250, height: 250 }} // You can adjust the width and height as needed
@@ -54,11 +56,21 @@ function SignUp() {
       <TouchableOpacity style={styles.BtnLogin}>
         <Text style={styles.LoginText}>Sign Up</Text>
       </TouchableOpacity>
+      </View>
     </View>
   );
 }
 
 const styles = StyleSheet.create({
+ container: {
+    flex: 1,
+    justifyContent: "center",
+    alignItems: "center",
+  },
+
+  centeredContent: {
+    alignItems: "center",
+  },
   input: {
     width: 250,
     height: 40,
