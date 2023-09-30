@@ -1,10 +1,11 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
-import Warehouses from './components/Warehouses';
+import Cart from './components/Cart';
+import Nav_component from './components/nav_component';
 
 export default function App() {
   return (
-    <Warehouses/>
+    <Nav_component />
   );
 }
 
