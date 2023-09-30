@@ -70,7 +70,7 @@ const styles = StyleSheet.create({
 
   BtnLogin: {
     width: 250,
-    height: 40,
+    height: 45,
     backgroundColor: "#324025",
     borderColor: "#F6BC5E",
     borderRadius: 25,
