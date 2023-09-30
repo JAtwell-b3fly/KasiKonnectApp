@@ -1,10 +1,10 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
-import HomeTuckShop from './components/HomeTuckshop';
+import Warehouses from './components/Warehouses';
 
 export default function App() {
   return (
-    <HomeTuckShop />
+    <Warehouses/>
   );
 }
 
