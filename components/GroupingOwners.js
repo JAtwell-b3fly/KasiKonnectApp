@@ -1,9 +1,9 @@
 import React from "react";
-import { View, Text, TouchableOpacity, Image, StyleSheet, ScrollView, TextInput} from "react-native";
+import { View, Text, TouchableOpacity, StyleSheet, Image, ScrollView} from "react-native";
 
-const Cart = () => {
+const Grouping_Owners = () => {
     return(
-        <View>
+<View>
         <View style={styles.header}>
             <Image source={require("../assets/logo.png")} resizeMode="contain" style={styles.logo} />
             <Image source={require("../assets/app-name-and-logo.png")} resizeMode="contain" style={styles.slogan} />
@@ -18,97 +18,110 @@ const Cart = () => {
                 <Image source={require("../assets/black-back.png")} style={styles.back_nav_img}/>
             </TouchableOpacity>
         
-            <Text style={styles.warehouse_heading}>Shopping Cart</Text>
+            <Text style={styles.warehouse_heading}>TuckShop Groups</Text>
         </View>
 
 
 
 
 
-        <ScrollView style={styles.cartscroll}>
-                <View style={styles.cart_item_div}>
-                    <Image source={require("../assets/bread.png")} resizeMode="contain" style={styles.warehouse_logo} />
+        <ScrollView style={styles.warehousescroll}>
+                <View style={styles.warehouse_div}>
+                    <Image source={require("../assets/grouping.png")} resizeMode="contain" style={styles.warehouse_logo} />
                     <View style={styles.warehouse_text_group}>
-                        <Text style={styles.warehouse_name}>Sasko Bread Bulk Variety Pack</Text>
-                        <Text style={styles.warehouse_area}>Samy's Wholesalers</Text>
-                        <TextInput placeholder="1" style={styles.quantity} placeholderTextColor={"white"} />
+                        <Text style={styles.warehouse_name}>Hulana Group</Text>
+                        <Text style={styles.warehouse_area}>Area: Hulana</Text>
+                        <Text style={styles.warehouse_options}>5 Members</Text>
                     </View>
 
-                    <View style={styles.warehouse_text_group}>
-                        <Text style={styles.price_text}>R 350</Text>
-
-                        <TouchableOpacity style={styles.delete_btn}>
-                            <Image source={require("../assets/9.png")} style={styles.delete_btn_img} />
-                        </TouchableOpacity>
-                    </View>
+                    <TouchableOpacity style={styles.view_more_btn}>
+                        <Text style={styles.view_btn_text}>Join</Text>
+                    </TouchableOpacity>
+                    
                 </View>
 
-                <View style={styles.cart_item_div}>
-                    <Image source={require("../assets/Go-Slos.jpeg")} resizeMode="contain" style={styles.warehouse_logo} />
+                <View style={styles.warehouse_div}>
+                    <Image source={require("../assets/grouping.png")} resizeMode="contain" style={styles.warehouse_logo} />
                     <View style={styles.warehouse_text_group}>
-                        <Text style={styles.warehouse_name}>Go Slo Chips Variety X 8 Flavours</Text>
-                        <Text style={styles.warehouse_area}>Samy's Wholesalers</Text>
-                        <TextInput placeholder="1" style={styles.quantity} placeholderTextColor={"white"} />
+                        <Text style={styles.warehouse_name}>Phutanang Group</Text>
+                        <Text style={styles.warehouse_area}>Area: Phutanang</Text>
+                        <Text style={styles.warehouse_options}>12 Members</Text>
                     </View>
 
-                    <View style={styles.warehouse_text_group}>
-                        <Text style={styles.price_text}>R 250</Text>
-
-                        <TouchableOpacity style={styles.delete_btn}>
-                            <Image source={require("../assets/9.png")} style={styles.delete_btn_img} />
-                        </TouchableOpacity>
-                    </View>
+                    <TouchableOpacity style={styles.view_more_btn}>
+                        <Text style={styles.view_btn_text}>Join</Text>
+                    </TouchableOpacity>
+                    
                 </View>
 
-                <View style={styles.cart_item_div}>
-                    <Image source={require("../assets/bread.png")} resizeMode="contain" style={styles.warehouse_logo} />
+                <View style={styles.warehouse_div}>
+                    <Image source={require("../assets/grouping.png")} resizeMode="contain" style={styles.warehouse_logo} />
                     <View style={styles.warehouse_text_group}>
-                        <Text style={styles.warehouse_name}>Sasko Bread Bulk Variety Pack</Text>
-                        <Text style={styles.warehouse_area}>Samy's Wholesalers</Text>
-                        <TextInput placeholder="1" style={styles.quantity} placeholderTextColor={"white"} />
+                        <Text style={styles.warehouse_name}>Roodepan Group</Text>
+                        <Text style={styles.warehouse_area}>Area: Roodepan, Pescodia</Text>
+                        <Text style={styles.warehouse_options}>7 Members</Text>
                     </View>
 
-                    <View style={styles.warehouse_text_group}>
-                        <Text style={styles.price_text}>R 350</Text>
-
-                        <TouchableOpacity style={styles.delete_btn}>
-                            <Image source={require("../assets/9.png")} style={styles.delete_btn_img} />
-                        </TouchableOpacity>
-                    </View>
+                    <TouchableOpacity style={styles.view_more_btn}>
+                        <Text style={styles.view_btn_text}>Join</Text>
+                    </TouchableOpacity>
+                    
                 </View>
 
-                <View style={styles.cart_item_div}>
-                    <Image source={require("../assets/Go-Slos.jpeg")} resizeMode="contain" style={styles.warehouse_logo} />
+                <View style={styles.warehouse_div}>
+                    <Image source={require("../assets/grouping.png")} resizeMode="contain" style={styles.warehouse_logo} />
                     <View style={styles.warehouse_text_group}>
-                        <Text style={styles.warehouse_name}>Go Slo Chips Variety X 8 Flavours</Text>
-                        <Text style={styles.warehouse_area}>Samy's Wholesalers</Text>
-                        <TextInput placeholder="1" style={styles.quantity} placeholderTextColor={"white"} />
+                        <Text style={styles.warehouse_name}>Homestead Group</Text>
+                        <Text style={styles.warehouse_area}>Area: Homestead</Text>
+                        <Text style={styles.warehouse_options}>5 Members</Text>
                     </View>
 
-                    <View style={styles.warehouse_text_group}>
-                        <Text style={styles.price_text}>R 250</Text>
-
-                        <TouchableOpacity style={styles.delete_btn}>
-                            <Image source={require("../assets/9.png")} style={styles.delete_btn_img} />
-                        </TouchableOpacity>
-                    </View>
+                    <TouchableOpacity style={styles.view_more_btn}>
+                        <Text style={styles.view_btn_text}>Join</Text>
+                    </TouchableOpacity>
+                    
                 </View>
 
-                <View style={styles.cart_item_div}>
-                    <Image source={require("../assets/bread.png")} resizeMode="contain" style={styles.warehouse_logo} />
+                <View style={styles.warehouse_div}>
+                    <Image source={require("../assets/grouping.png")} resizeMode="contain" style={styles.warehouse_logo} />
                     <View style={styles.warehouse_text_group}>
-                        <Text style={styles.warehouse_name}>Sasko Bread Bulk Variety Pack</Text>
-                        <Text style={styles.warehouse_area}>Samy's Wholesalers</Text>
-                        <TextInput placeholder="1" style={styles.quantity} placeholderTextColor={"white"} />
+                        <Text style={styles.warehouse_name}>Super Group</Text>
+                        <Text style={styles.warehouse_area}>Area: Roodepan</Text>
+                        <Text style={styles.warehouse_options}>3 Members</Text>
                     </View>
 
-                    <View style={styles.warehouse_text_group}>
-                        <Text style={styles.price_text}>R 350</Text>
+                    <TouchableOpacity style={styles.view_more_btn}>
+                        <Text style={styles.view_btn_text}>Join</Text>
+                    </TouchableOpacity>
+                    
+                </View>
 
-                        <TouchableOpacity style={styles.delete_btn}>
-                            <Image source={require("../assets/9.png")} style={styles.delete_btn_img} />
-                        </TouchableOpacity>
+                <View style={styles.warehouse_div}>
+                    <Image source={require("../assets/grouping.png")} resizeMode="contain" style={styles.warehouse_logo} />
+                    <View style={styles.warehouse_text_group}>
+                        <Text style={styles.warehouse_name}>Ver Group</Text>
+                        <Text style={styles.warehouse_area}>Area: Vervoertpark</Text>
+                        <Text style={styles.warehouse_options}>6 Members</Text>
                     </View>
+
+                    <TouchableOpacity style={styles.view_more_btn}>
+                        <Text style={styles.view_btn_text}>Join</Text>
+                    </TouchableOpacity>
+                    
+                </View>
+
+                <View style={styles.warehouse_div}>
+                    <Image source={require("../assets/grouping.png")} resizeMode="contain" style={styles.warehouse_logo} />
+                    <View style={styles.warehouse_text_group}>
+                        <Text style={styles.warehouse_name}>Beaconsfield Group</Text>
+                        <Text style={styles.warehouse_area}>Area: Beaconsfield, Herlear</Text>
+                        <Text style={styles.warehouse_options}>5 Members</Text>
+                    </View>
+
+                    <TouchableOpacity style={styles.view_more_btn}>
+                        <Text style={styles.view_btn_text}>Join</Text>
+                    </TouchableOpacity>
+                    
                 </View>
 
         </ScrollView>
@@ -188,36 +201,36 @@ slogan: {
 },
 warehouse_logo: {
     width: 100,
-    height: "100%",
-    marginLeft: 10,
+    height: "auto",
 },
-cartscroll: {
+warehousescroll: {
     backgroundColor: "#fbfaf2",
     flexDirection: "column",
     height: 540,
 },
-cart_item_div: {
+warehouse_div: {
     height: 130,
     width: "auto",
     marginBottom: 15,
     marginLeft: 15,
     flexDirection: "row",
-    backgroundColor: "#fbfaf2",
-    borderBottomWidth: 3,
-    borderBottomColor: "white",
 },
 warehouse_name: {
     fontSize: 16,
-    width: 150,
+    width: 140,
     textAlign: "left",
     fontWeight: "500",
 },
 warehouse_area: {
     fontSize: 15,
-    width: 150,
-    textAlign: "justify",
+    width: 140,
+    textAlign: "left",
 },
-
+warehouse_options: {
+    fontSize: 15,
+    width: 140,
+    textAlign: "left",
+},
 nav_bar_div: {
     height: 100,
     width: "100%",
@@ -275,35 +288,19 @@ warehouse_text_group: {
     flexDirection: "column",
     padding: 15,
 },
-delete_btn: {
-    marginTop: 30,
-    width: 30,
-    height: 30,
-    marginLeft: 15,
-    borderRadius: 10,
-},
-delete_btn_img: {
+view_more_btn: {
+    backgroundColor: "#f6bc5e",
+    width: 120,
     height: 50,
-    width: 50,
-    backgroundColor: "#324025",
-    position: "relative",
-    borderRadius: 10,
+    padding: 13,
+    marginTop: 40,
+    marginRight: 10,
 },
 view_btn_text: {
     fontSize: 16,
     fontWeight: "500",
     textAlign: "center",
 },
-price_text: {
-    fontSize: 18,
-    fontWeight: "800"
-},
-quantity: {
-    textAlign: "center",
-    backgroundColor: "#324025",
-    borderRadius: 10,
-    marginTop: 5,
-}
 });
 
-export default Cart;
+export default Grouping_Owners;
