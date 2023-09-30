@@ -1,14 +1,18 @@
 import React from "react";
 import { View, Text, TouchableOpacity, Image, ScrollView, StyleSheet, TextInput} from "react-native";
+import { useNavigation } from "@react-navigation/native";
 
 const HomeTuckShop = () => {
+
+    const navigation = useNavigation();
+
     return(
         <View>
             <View style={styles.header}>
                 <Image source={require("../assets/logo.png")} resizeMode="contain" style={styles.logo} />
                 <Image source={require("../assets/app-name-and-logo.png")} resizeMode="contain" style={styles.slogan} />
 
-                <TouchableOpacity style={styles.cart_btn}>
+                <TouchableOpacity style={styles.cart_btn} onPress={() => navigation.navigate("Cart")}>
                     <Image source={require("../assets/shopping-cart.png")} style={styles.cart_btn_img} />
                 </TouchableOpacity>
             </View>
@@ -20,21 +24,21 @@ const HomeTuckShop = () => {
             <View style={styles.warehousescroll}>
                 <View style={styles.featured_div}>
                 <Text style={styles.featured_warehouses}>Featured Warehouses</Text>
-                <TouchableOpacity style={styles.explore_btn}><Text style={styles.explore_all}>Explore All</Text></TouchableOpacity>
+                <TouchableOpacity style={styles.explore_btn} onPress={() => navigation.navigate("Warehouses")}><Text style={styles.explore_all}>Explore All</Text></TouchableOpacity>
                 </View>
 
                 <ScrollView horizontal>
-                    <View style={styles.warehouse_div}>
+                    <View style={styles.warehouse_div} onPress={() => navigation.navigate("Warehouses")}>
                         <Image source={require("../assets/samys-logo.png")} resizeMode="contain" style={styles.warehouse_logo} />
                         <Text style={styles.warehouse_name}>Samy's Wholesalers</Text>
                     </View>
 
-                    <View style={styles.warehouse_div}>
+                    <View style={styles.warehouse_div} onPress={() => navigation.navigate("Warehouses")}>
                         <Image source={require("../assets/numain-logo.jpeg")}  resizeMode="contain" style={styles.warehouse_logo} />
                         <Text style={styles.warehouse_name}>Numain Cash & Carry Wholesalers</Text>
                     </View>
 
-                    <View style={styles.warehouse_div}>
+                    <View style={styles.warehouse_div} onPress={() => navigation.navigate("Warehouses")}>
                         <Image source={require("../assets/cashcarry.jpeg")}  resizeMode="contain" style={styles.warehouse_logo} />
                         <Text style={styles.warehouse_name}>Cash & Carry Wholesalers</Text>
                     </View>
@@ -44,21 +48,21 @@ const HomeTuckShop = () => {
             <View style={styles.warehousescroll2}>
                 <View style={styles.featured_div}>
                     <Text style={styles.featured_warehouses2}>Top Sale Products</Text>
-                    <TouchableOpacity style={styles.explore_btn}><Text style={styles.explore_all}>Explore All</Text></TouchableOpacity>
+                    <TouchableOpacity style={styles.explore_btn} onPress={() => navigation.navigate("Samys")}><Text style={styles.explore_all}>Explore All</Text></TouchableOpacity>
                 </View>
 
                 <ScrollView horizontal>
-                    <View style={styles.product_div}>
+                    <View style={styles.product_div}  onPress={() => navigation.navigate("Samys")}>
                         <Image source={require("../assets/fizzers.jpg")} resizeMode="contain" style={styles.product_img} />
                         <Text style={styles.warehouse_name}>Fizzer Sweets Variety Pack</Text>
                     </View>
 
-                    <View style={styles.product_div}>
+                    <View style={styles.product_div}  onPress={() => navigation.navigate("Samys")}>
                         <Image source={require("../assets/fizzers.jpg")} resizeMode="contain" style={styles.product_img} />
                         <Text style={styles.warehouse_name}>Eggs Variety Size Trays</Text>
                     </View>
 
-                    <View style={styles.product_div}>
+                    <View style={styles.product_div}  onPress={() => navigation.navigate("Samys")}>
                         <Image source={require("../assets/Go-Slos.jpeg")} resizeMode="contain" style={styles.product_img} />
                         <Text style={styles.warehouse_name}>Go Slos Variety Packs</Text>
                     </View>
@@ -69,14 +73,14 @@ const HomeTuckShop = () => {
                 <View style={styles.nav_div}>
 
                     <View style={styles.single_nav_btn_div}>
-                        <TouchableOpacity style={styles.nav_btn}>
+                        <TouchableOpacity style={styles.nav_btn} onPress={() => navigation.navigate("HomeTuckshop")}>
                             <Image source={require("../assets/1.png")} style={styles.nav_btn_imgs} />
                         </TouchableOpacity>
                         <Text style={styles.nav_btn_text}>Home</Text>
                     </View>
                     
                     <View style={styles.single_nav_btn_div}>
-                        <TouchableOpacity style={styles.nav_btn}>
+                        <TouchableOpacity style={styles.nav_btn} onPress={() => navigation.navigate("Samys")}>
                             <Image source={require("../assets/4.png")} style={styles.nav_btn_imgs} />
                         </TouchableOpacity>
                         <Text style={styles.nav_btn_text}>Products</Text>
@@ -84,7 +88,7 @@ const HomeTuckShop = () => {
                     
 
                     <View style={styles.single_nav_btn_div}>
-                        <TouchableOpacity style={styles.nav_btn}>
+                        <TouchableOpacity style={styles.nav_btn} onPress={() => navigation.navigate("Samys")}>
                             <Image source={require("../assets/5.png")} style={styles.nav_btn_imgs} />
                         </TouchableOpacity>
                         <Text style={styles.nav_btn_text}>Specials</Text>

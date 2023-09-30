@@ -2,7 +2,7 @@ import React from "react";
 import { View, Text, TouchableOpacity, StyleSheet, Image, ScrollView} from "react-native";
 import { useNavigation } from "@react-navigation/native";
 
-const Grouping_Owners = () => {
+const Area_Group = () => {
     const navigation = useNavigation();
     return(
         <View>
@@ -16,11 +16,11 @@ const Grouping_Owners = () => {
         </View>
 
         <View style={styles.title_div}>
-            <TouchableOpacity>
+            <TouchableOpacity onPress={() => navigation.navigate("GroupingOwners")}>
                 <Image source={require("../assets/black-back.png")} style={styles.back_nav_img}/>
             </TouchableOpacity>
         
-            <Text style={styles.warehouse_heading}>TuckShop Groups</Text>
+            <Text style={styles.warehouse_heading}>Roodepan</Text>
         </View>
 
 
@@ -29,104 +29,94 @@ const Grouping_Owners = () => {
 
         <ScrollView style={styles.warehousescroll}>
                 <View style={styles.warehouse_div}>
-                    <Image source={require("../assets/grouping.png")} resizeMode="contain" style={styles.warehouse_logo} />
+                    <Image source={require("../assets/starling-tuck-shop.jpeg")} resizeMode="contain" style={styles.warehouse_logo} />
                     <View style={styles.warehouse_text_group}>
-                        <Text style={styles.warehouse_name}>Hulana Group</Text>
-                        <Text style={styles.warehouse_area}>Area: Hulana</Text>
-                        <Text style={styles.warehouse_options}>5 Members</Text>
+                        <Text style={styles.warehouse_name}>Starling Tuckshop</Text>
+                        <Text style={styles.warehouse_area}>Stock Day: 30th</Text>
+                        <Text style={styles.warehouse_options}>Starling Street</Text>
                     </View>
 
                     <TouchableOpacity style={styles.view_more_btn}>
-                        <Text style={styles.view_btn_text}>Join</Text>
+                        <Text style={styles.view_btn_text}>Super Group</Text>
                     </TouchableOpacity>
                     
                 </View>
 
                 <View style={styles.warehouse_div}>
-                    <Image source={require("../assets/grouping.png")} resizeMode="contain" style={styles.warehouse_logo} />
+                    <Image source={require("../assets/kennys-tuck-shop.jpg")} resizeMode="contain" style={styles.warehouse_logo} />
                     <View style={styles.warehouse_text_group}>
-                        <Text style={styles.warehouse_name}>Phutanang Group</Text>
-                        <Text style={styles.warehouse_area}>Area: Phutanang</Text>
-                        <Text style={styles.warehouse_options}>12 Members</Text>
+                        <Text style={styles.warehouse_name}>Kenny's Tuckshop</Text>
+                        <Text style={styles.warehouse_area}>Stock Day: 15th</Text>
+                        <Text style={styles.warehouse_options}>Eagle Street</Text>
                     </View>
 
                     <TouchableOpacity style={styles.view_more_btn}>
-                        <Text style={styles.view_btn_text}>Join</Text>
+                        <Text style={styles.view_btn_text}>Super Group</Text>
                     </TouchableOpacity>
                     
                 </View>
 
                 <View style={styles.warehouse_div}>
-                    <Image source={require("../assets/grouping.png")} resizeMode="contain" style={styles.warehouse_logo} />
+                    <Image source={require("../assets/seleka-tuck-shop.jpeg")} resizeMode="contain" style={styles.warehouse_logo} />
                     <View style={styles.warehouse_text_group}>
-                        <Text style={styles.warehouse_name}>Roodepan Group</Text>
-                        <Text style={styles.warehouse_area}>Area: Roodepan, Pescodia</Text>
-                        <Text style={styles.warehouse_options}>7 Members</Text>
+                        <Text style={styles.warehouse_name}>Seleka Tuckshop</Text>
+                        <Text style={styles.warehouse_area}>Stock Day: 18th</Text>
+                        <Text style={styles.warehouse_options}>Orchid Street</Text>
                     </View>
 
                     <TouchableOpacity style={styles.view_more_btn}>
-                        <Text style={styles.view_btn_text}>Join</Text>
+                        <Text style={styles.view_btn_text}>Ver Group</Text>
                     </TouchableOpacity>
                     
                 </View>
 
                 <View style={styles.warehouse_div}>
-                    <Image source={require("../assets/grouping.png")} resizeMode="contain" style={styles.warehouse_logo} />
+                    <Image source={require("../assets/starling-tuck-shop.jpeg")} resizeMode="contain" style={styles.warehouse_logo} />
                     <View style={styles.warehouse_text_group}>
-                        <Text style={styles.warehouse_name}>Homestead Group</Text>
-                        <Text style={styles.warehouse_area}>Area: Homestead</Text>
-                        <Text style={styles.warehouse_options}>5 Members</Text>
+                        <Text style={styles.warehouse_name}>Starling Tuckshop</Text>
+                        <Text style={styles.warehouse_area}>Stock Day: 30th</Text>
+                        <Text style={styles.warehouse_options}>Starling Street</Text>
                     </View>
 
                     <TouchableOpacity style={styles.view_more_btn}>
-                        <Text style={styles.view_btn_text}>Join</Text>
+                        <Text style={styles.view_btn_text}>Super Group</Text>
                     </TouchableOpacity>
                     
                 </View>
 
                 <View style={styles.warehouse_div}>
-                    <Image source={require("../assets/grouping.png")} resizeMode="contain" style={styles.warehouse_logo} />
+                    <Image source={require("../assets/kennys-tuck-shop.jpg")} resizeMode="contain" style={styles.warehouse_logo} />
                     <View style={styles.warehouse_text_group}>
-                        <Text style={styles.warehouse_name}>Super Group</Text>
-                        <Text style={styles.warehouse_area}>Area: Roodepan</Text>
-                        <Text style={styles.warehouse_options}>3 Members</Text>
+                        <Text style={styles.warehouse_name}>Kenny's Tuckshop</Text>
+                        <Text style={styles.warehouse_area}>Stock Day: 15th</Text>
+                        <Text style={styles.warehouse_options}>Eagle Street</Text>
                     </View>
 
                     <TouchableOpacity style={styles.view_more_btn}>
-                        <Text style={styles.view_btn_text}>Join</Text>
+                        <Text style={styles.view_btn_text}>Super Group</Text>
                     </TouchableOpacity>
                     
                 </View>
 
                 <View style={styles.warehouse_div}>
-                    <Image source={require("../assets/grouping.png")} resizeMode="contain" style={styles.warehouse_logo} />
+                    <Image source={require("../assets/seleka-tuck-shop.jpeg")} resizeMode="contain" style={styles.warehouse_logo} />
                     <View style={styles.warehouse_text_group}>
-                        <Text style={styles.warehouse_name}>Ver Group</Text>
-                        <Text style={styles.warehouse_area}>Area: Vervoertpark</Text>
-                        <Text style={styles.warehouse_options}>6 Members</Text>
+                        <Text style={styles.warehouse_name}>Seleka Tuckshop</Text>
+                        <Text style={styles.warehouse_area}>Stock Day: 18th</Text>
+                        <Text style={styles.warehouse_options}>Orchid Street</Text>
                     </View>
 
                     <TouchableOpacity style={styles.view_more_btn}>
-                        <Text style={styles.view_btn_text}>Join</Text>
-                    </TouchableOpacity>
-                    
-                </View>
-
-                <View style={styles.warehouse_div}>
-                    <Image source={require("../assets/grouping.png")} resizeMode="contain" style={styles.warehouse_logo} />
-                    <View style={styles.warehouse_text_group}>
-                        <Text style={styles.warehouse_name}>Beaconsfield Group</Text>
-                        <Text style={styles.warehouse_area}>Area: Beaconsfield, Herlear</Text>
-                        <Text style={styles.warehouse_options}>5 Members</Text>
-                    </View>
-
-                    <TouchableOpacity style={styles.view_more_btn}>
-                        <Text style={styles.view_btn_text}>Join</Text>
+                        <Text style={styles.view_btn_text}>Ver Group</Text>
                     </TouchableOpacity>
                     
                 </View>
 
         </ScrollView>
+
+        <TouchableOpacity style={styles.join_group_btn}>
+            <Text style={styles.join_group_btn_text}>Join Area Group</Text>
+        </TouchableOpacity>
 
         <TouchableOpacity style={styles.create_group_btn}>
             <Text style={styles.create_group_btn_text}>Create Group</Text>
@@ -137,14 +127,14 @@ const Grouping_Owners = () => {
             <View style={styles.nav_div}>
 
                 <View style={styles.single_nav_btn_div}>
-                    <TouchableOpacity style={styles.nav_btn}>
+                    <TouchableOpacity style={styles.nav_btn} onPress={() => navigation.navigate("HomeTuckshop")}>
                         <Image source={require("../assets/1.png")} style={styles.nav_btn_imgs} />
                     </TouchableOpacity>
                     <Text style={styles.nav_btn_text}>Home</Text>
                 </View>
                 
                 <View style={styles.single_nav_btn_div}>
-                    <TouchableOpacity style={styles.nav_btn}>
+                    <TouchableOpacity style={styles.nav_btn} onPress={() => navigation.navigate("Samys")}>
                         <Image source={require("../assets/4.png")} style={styles.nav_btn_imgs} />
                     </TouchableOpacity>
                     <Text style={styles.nav_btn_text}>Products</Text>
@@ -210,7 +200,7 @@ warehouse_logo: {
 warehousescroll: {
     backgroundColor: "#fbfaf2",
     flexDirection: "column",
-    height: 440,
+    height: 380,
 },
 warehouse_div: {
     height: 130,
@@ -301,12 +291,12 @@ view_more_btn: {
     marginRight: 10,
 },
 view_btn_text: {
-    fontSize: 16,
+    fontSize: 15,
     fontWeight: "500",
     textAlign: "center",
 },
-create_group_btn: {
-    width: 170,
+join_group_btn: {
+    width: 210,
     height: 55,
     backgroundColor: "#324025",
     borderColor: "#f6bc5e",
@@ -316,12 +306,29 @@ create_group_btn: {
     marginTop: 20,
     marginLeft: 120,
 },
-create_group_btn_text: {
+create_group_btn: {
+    width: 210,
+    height: 55,
+    backgroundColor: "#fbfaf2",
+    borderColor: "#f6bc5e",
+    padding: 10,
+    borderRadius: 30,
+    borderWidth: 2,
+    marginTop: 10,
+    marginLeft: 120,
+},
+join_group_btn_text: {
     color: "white",
     fontSize: 20,
     fontWeight: "500",
     textAlign: "center"
-}
+},
+create_group_btn_text: {
+    color: "#324025",
+    fontSize: 20,
+    fontWeight: "500",
+    textAlign: "center"
+},
 });
 
-export default Grouping_Owners;
+export default Area_Group;

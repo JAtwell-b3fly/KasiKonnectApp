@@ -1,22 +1,30 @@
 import React from "react";
 import { StyleSheet, Text, View, Image, TouchableOpacity } from "react-native";
+import { useNavigation } from "@react-navigation/native";
+
 function Welcome() {
+
+  const navigation = useNavigation();
+
   return (
-    <View>
+    <View style={styles.container}>
+
+      <View style={styles.centeredContent}>
       <Image
         source={require("../assets/logo.png")}
         style={{ width: 200, height: 200 }} // You can adjust the width and height as needed
       />
 
       <View style={styles.BtnContainer}>
-        <TouchableOpacity style={styles.BtnShopOwner}>
+        <TouchableOpacity style={styles.BtnShopOwner} onPress={navigation.navigate("Login")}>
           <Text style={styles.TextShopOwner}>Shop Owner</Text>
         </TouchableOpacity>
-        <TouchableOpacity style={styles.BtnDeliveryOwner}>
+        <TouchableOpacity style={styles.BtnDeliveryOwner}onPress={navigation.navigate("Login")} >
           <Text style={styles.TextShopOwner}>Delivery Driver</Text>
         </TouchableOpacity>
 
        
+      </View>
       </View>
     </View>
   );
@@ -25,9 +33,12 @@ function Welcome() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#fff",
-    alignItems: "center",
     justifyContent: "center",
+    alignItems: "center",
+  },
+
+  centeredContent: {
+    alignItems: "center",
   },
 
   BtnContainer: {

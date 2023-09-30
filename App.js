@@ -1,11 +1,11 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
-import Cart from './components/Cart';
-import Grouping_Owners from './components/GroupingOwners';
+import Welcome from './pages/welcome';
+import App_Navigation from './components/AppNavigation';
 
 export default function App() {
   return (
-    <Grouping_Owners />
+    <App_Navigation />
   );
 }
 

@@ -1,20 +1,23 @@
 import React from "react";
 import { View, Text, TouchableOpacity, Image, StyleSheet, ScrollView, TextInput} from "react-native";
+import { useNavigation } from "@react-navigation/native";
 
 const Cart = () => {
+
+    const navigation = useNavigation();
     return(
         <View>
         <View style={styles.header}>
             <Image source={require("../assets/logo.png")} resizeMode="contain" style={styles.logo} />
             <Image source={require("../assets/app-name-and-logo.png")} resizeMode="contain" style={styles.slogan} />
 
-            <TouchableOpacity style={styles.cart_btn}>
+            <TouchableOpacity style={styles.cart_btn} onPress={() => navigation.navigate("Cart")}>
                 <Image source={require("../assets/shopping-cart.png")} style={styles.cart_btn_img} />
             </TouchableOpacity>
         </View>
 
         <View style={styles.title_div}>
-            <TouchableOpacity>
+            <TouchableOpacity onPress={() => navigation.navigate("Warehouses")}>
                 <Image source={require("../assets/black-back.png")} style={styles.back_nav_img}/>
             </TouchableOpacity>
         
@@ -120,14 +123,14 @@ const Cart = () => {
             <View style={styles.nav_div}>
 
                 <View style={styles.single_nav_btn_div}>
-                    <TouchableOpacity style={styles.nav_btn}>
+                    <TouchableOpacity style={styles.nav_btn} onPress={() => navigation.navigate("HomeTuckshop")}>
                         <Image source={require("../assets/1.png")} style={styles.nav_btn_imgs} />
                     </TouchableOpacity>
                     <Text style={styles.nav_btn_text}>Home</Text>
                 </View>
                 
                 <View style={styles.single_nav_btn_div}>
-                    <TouchableOpacity style={styles.nav_btn}>
+                    <TouchableOpacity style={styles.nav_btn} onPress={() => navigation.navigate("Samys")}>
                         <Image source={require("../assets/4.png")} style={styles.nav_btn_imgs} />
                     </TouchableOpacity>
                     <Text style={styles.nav_btn_text}>Products</Text>
