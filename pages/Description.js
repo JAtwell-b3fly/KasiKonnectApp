@@ -9,13 +9,15 @@ import {
     CheckBox
 } from 'react-native';
 
+
+
 export default function Description() {
     return (<View>
         <View style={styles.topContainer} >
             <Image style={styles.logo} source={require('../assets/logo.png')} />
-            <Image style={styles.logoName} source={require('../assets/App Name and Logo.png')} />
+            <Image style={styles.logoName} source={require('../assets/app-name-and-logo.png')} />
             <TouchableOpacity>
-            <Image style={styles.shopCart} source={require('../assets/shopping-cart.png')} /></TouchableOpacity>
+                <Image style={styles.shopCart} source={require('../assets/shopping-cart.png')} /></TouchableOpacity>
         </View>
         <View style={styles.main}>
             <View style={styles.belowmain} >
@@ -49,13 +51,12 @@ export default function Description() {
 
         <View style={styles.mainButton}>
             <TouchableOpacity>
-            <View style={styles.heartContainer}> <Image style={styles.heartimg} source={require('../assets/heart 2.png')} /></View></TouchableOpacity>
+                <View style={styles.heartContainer}> <Image style={styles.heartimg} source={require('../assets/heart 2.png')} /></View></TouchableOpacity>
             <TouchableOpacity style={styles.button}> <View style={styles.heartContainer}>
-                 <Image style={styles.heartimg} source={require('../assets/add-to-cart.png')} /></View> <Text style={styles.buttonText}>Add To Cart</Text></TouchableOpacity>
-
+                <Image style={styles.heartimg} source={require('../assets/add-to-cart.png')} /></View> <Text style={styles.buttonText}>Add To Cart</Text></TouchableOpacity>
         </View>
+        //want to add bottom navigation.
 
-        
     </View>)
 }
 
@@ -85,10 +86,12 @@ const styles = StyleSheet.create({
         borderRadius: 30,
         backgroundColor: '#E0CCA4'
     },
-    bottom:{backgroundColor:'#324025', height: 79, width:300,
-    padding: 7,
-    justifyContent: 'center',
-    alignItems: 'center'},
+    bottom: {
+        backgroundColor: '#324025', height: 79, width: 300,
+        padding: 7,
+        justifyContent: 'center',
+        alignItems: 'center'
+    },
     mainButton: {
         borderWidth: 2, borderColor: '#F6BC5E', width: 341,
         height: 62,
@@ -111,7 +114,7 @@ const styles = StyleSheet.create({
         backgroundColor: '#324025',
         width: 262,
         height: 43, padding: 12, alignItems: 'center', borderRadius: 50, borderWidth: 2, borderColor: '#F6BC5E', justifyContent: 'center',
-        flexDirection:'row'
+        flexDirection: 'row'
     },
     heart: {
         width: 142,
@@ -124,7 +127,7 @@ const styles = StyleSheet.create({
     barcodeMain: { flexDirection: 'row', justifyContent: 'space-between' },
     buttonText: {
         color: '#FFF',
-        fontSize: 24, padding:5
+        fontSize: 24, padding: 5
     }
 
 })
