@@ -1,14 +1,12 @@
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View } from 'react-native';
-import Warehouse from './components/Warehouses';
-import Description from './pages/Description';
-import Transaction from './pages/Transaction';
-import Payment from './pages/Payment';
-
+import  HomeTuckShop from './components/HomeTuckshop'
+import SignUp from './pages/signUp';
+import Grouping from './pages/grouping';
 export default function App() {
   return (
     <View style={styles.container}>
-      <Payment/>
+      <Grouping />
     </View>
   );
 }

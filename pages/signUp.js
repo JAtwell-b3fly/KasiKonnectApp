@@ -16,49 +16,72 @@ function SignUp() {
  const [username, setUsername] = useState("");
  const [password, setPassword] = useState("");
   const [fullName, setFullName] = useState("");
-   const options = ["Option 1", "Option 2", "Option 3"];
-   const [selectedValue, setSelectedValue] = useState(options[0]);
-  return (
-    <View>
-      <Image
-        source={require("../assets/logo.png")}
-        style={{ width: 250, height: 250 }} // You can adjust the width and height as needed
-      />
-      <TextInput
-        style={styles.input}
-        placeholder="Full Name"
-        onChangeText={(text) => setFullName(text)}
-        value={fullName}
-      />
+   
+   const [selectedValue, setSelectedValue] = useState('Shop Owner'); 
+   
+  
+  
+   return (
+     <View style={styles.container}>
+       <View style={styles.centeredContent}>
+         <Image
+           source={require("../assets/logo.png")}
+           style={{ width: 250, height: 250 }} // You can adjust the width and height as needed
+         />
+         <TextInput
+           style={styles.input}
+           placeholder="Full Name"
+           onChangeText={(text) => setFullName(text)}
+           value={fullName}
+         />
 
-      <TextInput
-        style={styles.input}
-        placeholder="Email"
-        onChangeText={(text) => setUsername(text)}
-        value={username}
-      />
+         <Picker
+           style={styles.picker}
+           selectedValue={selectedValue}
+           onValueChange={(itemValue, itemIndex) => setSelectedValue(itemValue)}
+         >
+           <Picker.Item label="Shop Owner" value="Shop Owner" />
+           <Picker.Item label="Driver" value="Driver" />
 
-      <TextInput
-        style={styles.input}
-        placeholder="Password"
-        onChangeText={(text) => setPassword(text)}
-        value={password}
-        secureTextEntry
-      />
+         </Picker>
+         <TextInput
+           style={styles.input}
+           placeholder="Email"
+           onChangeText={(text) => setUsername(text)}
+           value={username}
+         />
 
-      <Text>
-        {" "}
-        Already Have An Account?
-        <Text></Text> <Text>Login</Text>
-      </Text>
-      <TouchableOpacity style={styles.BtnLogin}>
-        <Text style={styles.LoginText}>Sign Up</Text>
-      </TouchableOpacity>
-    </View>
-  );
+         <TextInput
+           style={styles.input}
+           placeholder="Password"
+           onChangeText={(text) => setPassword(text)}
+           value={password}
+           secureTextEntry
+         />
+
+         <Text>
+           {" "}
+           Already Have An Account?
+           <Text></Text> <Text>Login</Text>
+         </Text>
+         <TouchableOpacity style={styles.BtnLogin}>
+           <Text style={styles.LoginText}>Sign Up</Text>
+         </TouchableOpacity>
+       </View>
+     </View>
+   );
 }
 
 const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    justifyContent: "center",
+    alignItems: "center",
+  },
+
+  centeredContent: {
+    alignItems: "center",
+  },
   input: {
     width: 250,
     height: 40,
@@ -72,9 +95,24 @@ const styles = StyleSheet.create({
     fontFamily: "Inter",
   },
 
+  picker: {
+    width: 250, // Set the width of the Picker
+    height: 40, // Set the height of the Picker
+    borderWidth: 1,
+    borderColor: "#F6BC5E",
+    marginTop: 10,
+    backgroundColor: "white", // Background color of the Picker
+    borderRadius: 25,
+  },
+
+  label: {
+    fontSize: 18,
+    marginBottom: 10,
+    paddingLeft: 70
+  },
   BtnLogin: {
     width: 250,
-    height: 40,
+    height: 45,
     backgroundColor: "#324025",
     borderColor: "#F6BC5E",
     borderRadius: 25,

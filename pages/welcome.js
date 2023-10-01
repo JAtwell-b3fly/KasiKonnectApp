@@ -2,7 +2,9 @@ import React from "react";
 import { StyleSheet, Text, View, Image, TouchableOpacity } from "react-native";
 function Welcome() {
   return (
-    <View>
+    <View style={styles.container}>
+
+      <View style={styles.centeredContent}>
       <Image
         source={require("../assets/logo.png")}
         style={{ width: 200, height: 200 }} // You can adjust the width and height as needed
@@ -18,6 +20,7 @@ function Welcome() {
 
        
       </View>
+      </View>
     </View>
   );
 }
@@ -25,9 +28,12 @@ function Welcome() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#fff",
-    alignItems: "center",
     justifyContent: "center",
+    alignItems: "center",
+  },
+
+  centeredContent: {
+    alignItems: "center",
   },
 
   BtnContainer: {
@@ -37,14 +43,14 @@ const styles = StyleSheet.create({
   BtnShopOwner: {
     backgroundColor: "#324025",
     width: "250px",
-    height: 40,
+    height: 45,
     borderRadius: 30,
   },
 
   BtnDeliveryOwner: {
     backgroundColor: "#F6BC5E",
     width: "250px",
-    height: 40,
+    height: 45,
     borderRadius: 30,
     marginTop: 5
   },
