@@ -36,7 +36,7 @@ const Grouping_Owners = () => {
                         <Text style={styles.warehouse_options}>5 Members</Text>
                     </View>
 
-                    <TouchableOpacity style={styles.view_more_btn}>
+                    <TouchableOpacity style={styles.view_more_btn} onPress={() => navigation.navigate("AreaGroup")}>
                         <Text style={styles.view_btn_text}>Join</Text>
                     </TouchableOpacity>
                     
@@ -50,7 +50,7 @@ const Grouping_Owners = () => {
                         <Text style={styles.warehouse_options}>12 Members</Text>
                     </View>
 
-                    <TouchableOpacity style={styles.view_more_btn}>
+                    <TouchableOpacity style={styles.view_more_btn} onPress={() => navigation.navigate("AreaGroup")}>
                         <Text style={styles.view_btn_text}>Join</Text>
                     </TouchableOpacity>
                     
@@ -64,7 +64,7 @@ const Grouping_Owners = () => {
                         <Text style={styles.warehouse_options}>7 Members</Text>
                     </View>
 
-                    <TouchableOpacity style={styles.view_more_btn}>
+                    <TouchableOpacity style={styles.view_more_btn} onPress={() => navigation.navigate("AreaGroup")}>
                         <Text style={styles.view_btn_text}>Join</Text>
                     </TouchableOpacity>
                     
@@ -78,7 +78,7 @@ const Grouping_Owners = () => {
                         <Text style={styles.warehouse_options}>5 Members</Text>
                     </View>
 
-                    <TouchableOpacity style={styles.view_more_btn}>
+                    <TouchableOpacity style={styles.view_more_btn} onPress={() => navigation.navigate("AreaGroup")}>
                         <Text style={styles.view_btn_text}>Join</Text>
                     </TouchableOpacity>
                     
@@ -92,7 +92,7 @@ const Grouping_Owners = () => {
                         <Text style={styles.warehouse_options}>3 Members</Text>
                     </View>
 
-                    <TouchableOpacity style={styles.view_more_btn}>
+                    <TouchableOpacity style={styles.view_more_btn} onPress={() => navigation.navigate("AreaGroup")}>
                         <Text style={styles.view_btn_text}>Join</Text>
                     </TouchableOpacity>
                     
@@ -106,7 +106,7 @@ const Grouping_Owners = () => {
                         <Text style={styles.warehouse_options}>6 Members</Text>
                     </View>
 
-                    <TouchableOpacity style={styles.view_more_btn}>
+                    <TouchableOpacity style={styles.view_more_btn} onPress={() => navigation.navigate("AreaGroup")}>
                         <Text style={styles.view_btn_text}>Join</Text>
                     </TouchableOpacity>
                     
@@ -120,7 +120,7 @@ const Grouping_Owners = () => {
                         <Text style={styles.warehouse_options}>5 Members</Text>
                     </View>
 
-                    <TouchableOpacity style={styles.view_more_btn}>
+                    <TouchableOpacity style={styles.view_more_btn} onPress={() => navigation.navigate("AreaGroup")}>
                         <Text style={styles.view_btn_text}>Join</Text>
                     </TouchableOpacity>
                     
@@ -128,7 +128,7 @@ const Grouping_Owners = () => {
 
         </ScrollView>
 
-        <TouchableOpacity style={styles.create_group_btn}>
+        <TouchableOpacity style={styles.create_group_btn} onPress={() => navigation.navigate("GroupingForm")}>
             <Text style={styles.create_group_btn_text}>Create Group</Text>
         </TouchableOpacity>
 
@@ -137,14 +137,14 @@ const Grouping_Owners = () => {
             <View style={styles.nav_div}>
 
                 <View style={styles.single_nav_btn_div}>
-                    <TouchableOpacity style={styles.nav_btn}>
+                    <TouchableOpacity style={styles.nav_btn} onPress={() => navigation.navigate("HomeTuckShop")}> 
                         <Image source={require("../assets/1.png")} style={styles.nav_btn_imgs} />
                     </TouchableOpacity>
                     <Text style={styles.nav_btn_text}>Home</Text>
                 </View>
                 
                 <View style={styles.single_nav_btn_div}>
-                    <TouchableOpacity style={styles.nav_btn}>
+                    <TouchableOpacity style={styles.nav_btn} onPress={() => navigation.navigate("GroupingOwners")}>
                         <Image source={require("../assets/4.png")} style={styles.nav_btn_imgs} />
                     </TouchableOpacity>
                     <Text style={styles.nav_btn_text}>Products</Text>
@@ -152,7 +152,7 @@ const Grouping_Owners = () => {
                 
 
                 <View style={styles.single_nav_btn_div}>
-                    <TouchableOpacity style={styles.nav_btn}>
+                    <TouchableOpacity style={styles.nav_btn} onPress={() => navigation.navigate("GroupingOwners")}>
                         <Image source={require("../assets/5.png")} style={styles.nav_btn_imgs} />
                     </TouchableOpacity>
                     <Text style={styles.nav_btn_text}>Specials</Text>

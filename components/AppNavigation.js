@@ -15,6 +15,7 @@ import Grouping_Owners from "./GroupingOwners";
 import HomeTuckshop from "./HomeTuckshop";
 import Samys from "./Samys";
 import Warehouses from "./Warehouses";
+import Grouping from "../pages/grouping";
 
 const App_Navigation = () => {
     return(
@@ -31,6 +32,7 @@ const App_Navigation = () => {
                 <Stack.Screen name="HomeTuckShop" component={HomeTuckshop} />
                 <Stack.Screen name="Samys" component={Samys} />
                 <Stack.Screen name="Warehouses" component={Warehouses} />
+                <Stack.Screen name="GroupingForm" component={Grouping} />
             </Stack.Navigator>
         </NavigationContainer>
     )

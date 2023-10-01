@@ -123,14 +123,14 @@ const Cart = () => {
             <View style={styles.nav_div}>
 
                 <View style={styles.single_nav_btn_div}>
-                    <TouchableOpacity style={styles.nav_btn} onPress={() => navigation.navigate("HomeTuckshop")}>
+                    <TouchableOpacity style={styles.nav_btn} onPress={() => navigation.navigate("HomeTuckShop")}>
                         <Image source={require("../assets/1.png")} style={styles.nav_btn_imgs} />
                     </TouchableOpacity>
                     <Text style={styles.nav_btn_text}>Home</Text>
                 </View>
                 
                 <View style={styles.single_nav_btn_div}>
-                    <TouchableOpacity style={styles.nav_btn} onPress={() => navigation.navigate("Samys")}>
+                    <TouchableOpacity style={styles.nav_btn} onPress={() => navigation.navigate("GroupingOwners")}>
                         <Image source={require("../assets/4.png")} style={styles.nav_btn_imgs} />
                     </TouchableOpacity>
                     <Text style={styles.nav_btn_text}>Products</Text>
@@ -138,7 +138,7 @@ const Cart = () => {
                 
 
                 <View style={styles.single_nav_btn_div}>
-                    <TouchableOpacity style={styles.nav_btn}>
+                    <TouchableOpacity style={styles.nav_btn} onPress={() => navigation.navigate("GroupingOwners")}>
                         <Image source={require("../assets/5.png")} style={styles.nav_btn_imgs} />
                     </TouchableOpacity>
                     <Text style={styles.nav_btn_text}>Specials</Text>
