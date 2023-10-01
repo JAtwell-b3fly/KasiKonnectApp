@@ -80,7 +80,7 @@ const HomeTuckShop = () => {
                     </View>
                     
                     <View style={styles.single_nav_btn_div}>
-                        <TouchableOpacity style={styles.nav_btn} onPress={() => navigation.navigate("Samys")}>
+                        <TouchableOpacity style={styles.nav_btn} onPress={() => navigation.navigate("GroupingOwners")}>
                             <Image source={require("../assets/4.png")} style={styles.nav_btn_imgs} />
                         </TouchableOpacity>
                         <Text style={styles.nav_btn_text}>Products</Text>
@@ -88,7 +88,7 @@ const HomeTuckShop = () => {
                     
 
                     <View style={styles.single_nav_btn_div}>
-                        <TouchableOpacity style={styles.nav_btn} onPress={() => navigation.navigate("Samys")}>
+                        <TouchableOpacity style={styles.nav_btn} onPress={() => navigation.navigate("GroupingOwners")}>
                             <Image source={require("../assets/5.png")} style={styles.nav_btn_imgs} />
                         </TouchableOpacity>
                         <Text style={styles.nav_btn_text}>Specials</Text>

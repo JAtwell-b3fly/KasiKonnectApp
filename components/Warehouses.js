@@ -38,7 +38,7 @@ const Warehouses = () => {
                         <Text style={styles.warehouse_options}>Sweets, Toiletries, Meat, Drinks</Text>
                     </View>
 
-                    <TouchableOpacity style={styles.view_more_btn} onPress={() => navigation.navigate("Samys")}>
+                    <TouchableOpacity style={styles.view_more_btn} onPress={() => navigation.navigate("GroupingOwners")}>
                         <Text style={styles.view_btn_text}>View More</Text>
                     </TouchableOpacity>
                     
@@ -52,7 +52,7 @@ const Warehouses = () => {
                         <Text style={styles.warehouse_options}>Sweets, Toiletries, Meat, Drinks</Text>
                     </View>
 
-                    <TouchableOpacity style={styles.view_more_btn}  onPress={() => navigation.navigate("Samys")}>
+                    <TouchableOpacity style={styles.view_more_btn}  onPress={() => navigation.navigate("GroupingOwners")}>
                         <Text style={styles.view_btn_text}>View More</Text>
                     </TouchableOpacity>
                     
@@ -66,7 +66,7 @@ const Warehouses = () => {
                         <Text style={styles.warehouse_options}>Sweets, Toiletries, Meat, Drinks</Text>
                     </View>
 
-                    <TouchableOpacity style={styles.view_more_btn}  onPress={() => navigation.navigate("Samys")}>
+                    <TouchableOpacity style={styles.view_more_btn}  onPress={() => navigation.navigate("GroupingOwners")}>
                         <Text style={styles.view_btn_text}>View More</Text>
                     </TouchableOpacity>
                     
@@ -80,7 +80,7 @@ const Warehouses = () => {
                         <Text style={styles.warehouse_options}>Sweets, Toiletries, Meat, Drinks</Text>
                     </View>
 
-                    <TouchableOpacity style={styles.view_more_btn}  onPress={() => navigation.navigate("Samys")}>
+                    <TouchableOpacity style={styles.view_more_btn}  onPress={() => navigation.navigate("GroupingOwners")}>
                         <Text style={styles.view_btn_text}>View More</Text>
                     </TouchableOpacity>
                     
@@ -94,7 +94,7 @@ const Warehouses = () => {
                         <Text style={styles.warehouse_options}>Sweets, Toiletries, Meat, Drinks</Text>
                     </View>
 
-                    <TouchableOpacity style={styles.view_more_btn}  onPress={() => navigation.navigate("Samys")}>
+                    <TouchableOpacity style={styles.view_more_btn}  onPress={() => navigation.navigate("GroupingOwners")}>
                         <Text style={styles.view_btn_text}>View More</Text>
                     </TouchableOpacity>
                     
@@ -108,7 +108,7 @@ const Warehouses = () => {
                         <Text style={styles.warehouse_options}>Sweets, Toiletries, Meat, Drinks</Text>
                     </View>
 
-                    <TouchableOpacity style={styles.view_more_btn}  onPress={() => navigation.navigate("Samys")}>
+                    <TouchableOpacity style={styles.view_more_btn}  onPress={() => navigation.navigate("GroupingOwners")}>
                         <Text style={styles.view_btn_text}>View More</Text>
                     </TouchableOpacity>
                     
@@ -122,7 +122,7 @@ const Warehouses = () => {
                         <Text style={styles.warehouse_options}>Sweets, Toiletries, Meat, Drinks</Text>
                     </View>
 
-                    <TouchableOpacity style={styles.view_more_btn}  onPress={() => navigation.navigate("Samys")}>
+                    <TouchableOpacity style={styles.view_more_btn}  onPress={() => navigation.navigate("GroupingOwners")}>
                         <Text style={styles.view_btn_text}>View More</Text>
                     </TouchableOpacity>
                     
@@ -144,7 +144,7 @@ const Warehouses = () => {
                 </View>
                 
                 <View style={styles.single_nav_btn_div}>
-                    <TouchableOpacity style={styles.nav_btn} onPress={() => navigation.navigate("Samys")}>
+                    <TouchableOpacity style={styles.nav_btn} onPress={() => navigation.navigate("GroupingOwners")}>
                         <Image source={require("../assets/4.png")} style={styles.nav_btn_imgs} />
                     </TouchableOpacity>
                     <Text style={styles.nav_btn_text}>Products</Text>
